@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/statistics.css">
+    <title>统计</title>
+</head>
+
+<body>
+    <div class="test_top"></div>
+    <div class="test_left">
+        <a href="account_list.html">账户列表</a><br>
+        <a href="add_child.html">添加子订单</a><br>
+        <a href="addcom.html">新增商户</a><br>
+        <a href="audit_list.html">订单列表</a><br>
+        <a href="configuration.html">权限配置</a><br>
+        <a href="mycom.html">我的商户</a><br>
+        <a href="order_details.html">订单详情</a><br>
+        <a href="order_list.html">订单列表</a><br>
+        <a href="order_review.html">订单审核</a><br>
+        <a href="password.html">修改密码</a><br>
+        <a href="query.html">查询</a><br>
+        <a href="r_addcom.html">r新增商户</a><br>
+        <a href="transfer.html">批量转账</a><br>
+        <a href="user_list.html">用户列表</a><br>
+    </div>
+    <div style="width:85%;float:right;height: 100%">
+        <div class="body_box">
+            <!-- 面包屑 -->
+            <div class="sta_crumb">
+                <a href="javascript:;">首页</a> &nbsp;/&nbsp;
+                <a href="javascript:;" class="bottom_line">统计</a>
+            </div>
+            <!-- 实时余额 -->
+            <div class="sta_newBalance">
+                <div class="sta_nb_title">实时余额<span>刷新</span></div>
+                <div class="sta_nb_cont">
+                    <div class="sta_nb_cont_move">
+                        <div class="cont_move_hide">
+
+                        </div>
+                    </div>
+                    <div class=" sta_nb_cont_but">
+                        <span>更多</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 今日统计 -->
+            <div class="sta_newBalance sta_todaySta">
+                <div class="sta_nb_title">今日统计</div>
+                <div class="sta_ts_cont">
+                    <!-- 查询条件 -->
+                    <div class="sta_ts_query">
+                        <div class="sta_ts_query_item">
+                            公司
+                            <select name="" id="com_name">
+                                <option value="全部" selected="selected">全部</option>
+                                <option value="麻袋氪">麻袋氪</option>
+                                <option value="云钛度">云钛度</option>
+                            </select>
+                        </div>
+                        <div class="sta_ts_query_item">
+                            商户
+                            <select name="" id="tenant_name">
+                                    <option value="全部" selected="selected">全部</option>
+                                    <option value="鼎信">鼎信</option>
+                                    <option value="昊坤">昊坤</option>
+                                </select>
+                        </div>
+                        <div class="sta_ts_query_item">
+                            业务
+                            <select name="" id="business_name">
+                                        <option value="全部" selected="selected">全部</option>
+                                        <option value="联通话费">联通话费</option>
+                                        <option value="中石化加油卡">中石化加油卡</option>
+                                    </select>
+                        </div>
+
+
+                    </div>
+                    <!-- 查询结果 -->
+                    <div class="sta_ts_res">
+
+                    </div>
+                </div>
+            </div>
+            <div class="sta_newBalance sta_chart">
+                <div class="sta_nb_title">转账统计</div>
+                <!-- 查询条件 -->
+                <div class="sta_chart_query">
+                    <div class="sta_chart_query_left">
+                        <span>上月</span>
+                        <span>近30天</span>
+                        <span class="active">近7天</span>
+                    </div>
+                    <div class="sta_chart_query_right">
+                        公司
+                        <select name="" id="chart_com_name">
+                                <option value="全部" selected="selected">全部</option>
+                                <option value="麻袋氪">麻袋氪</option>
+                                <option value="云钛度">云钛度</option>
+                            </select>
+                        <!--  -->
+                        商户
+                        <select name="" id="chart_tenant_name">
+                                    <option value="全部" selected="selected">全部</option>
+                                    <option value="鼎信">鼎信</option>
+                                    <option value="昊坤">昊坤</option>
+                            </select>
+                    </div>
+                </div>
+                <!--绘制 echart 图表 -->
+                <div class="sta_draw_echart" id="sta_draw_echart">
+
+                </div>
+                <div class="left_title">转账金额\万</div>
+                <div class="bottom_title">
+                    合计转账：<span>23,941.01</span>元
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/echarts.min.js"></script>
+    <script src="../js/statistics.js"></script>
+</body>
+
+</html>

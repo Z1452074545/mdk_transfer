@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/add_child.css">
+    <title>添加子订单</title>
+</head>
+
+<body>
+    <div class="test_top"></div>
+    <div class="test_left">
+    </div>
+    <div style="width:85%;float:right;height: 100%">
+        <div class="body_box">
+            <!-- 面包屑 -->
+            <div class="sta_crumb">
+                <a href="javascript:;">首页</a> &nbsp;/&nbsp;
+                <a href="javascript:;">批量转账</a>&nbsp;/&nbsp;
+                <a href="javascript:;" class="bottom_line">添加子订单</a>
+            </div>
+
+            <div class="mc_title">
+                <div class="mc_title_mess">
+                    公司名称：
+                    <select name="" id="qw_cont_com_name">
+                                <option value="无" selected="selected">无</option>
+                                <option value="鼎信">鼎信</option>
+                                <option value="道春">道春</option>
+                                <option value="收卡啦">收卡啦</option>
+                            </select> 账户渠道：
+                    <select name="" id="qw_cont_mer_name">
+                                <option value="无" selected="selected">无</option>
+                                <option value="话费">话费</option>
+                                <option value="流量">流量</option>
+                                <option value="油卡">油卡</option>
+                             </select> 转账金额：
+                    <div class="layui-input-inline mc_title_m">
+                        <input type="text" value="" name="" lay-verify="" autocomplete="off" class="layui-input">
+                        <div class="rmc_title_m_child">※合计超过鼎信的话费转账限额</div>
+                    </div>元
+
+                    <div class="layui-form-item">
+                        <div class="layui-inline remark">
+                            <label class="layui-form-label">打款备注：</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="remark" lay-verify="length" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mc_title_right mc_title_affirm">保存</div>
+            </div>
+            <form class="layui-form" action="" lay-filter="example">
+                <div class="mc_input">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">收款银行：</label>
+                            <div class="layui-input-inline">
+                                <select name="bank_name" lay-filter="bank_name">
+                                    <option value="中国银行" selected="selected">中国银行</option>
+                                    <option value="建设银行">建设银行</option>
+                                    <option value="农业银行">农业银行</option>
+                                  </select>
+                            </div>
+
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">银行编码：</label>
+                            <div class="layui-input-inline">
+                                <input disabled="disabled" type="text" value="BOC" name="cod_bank" lay-verify="" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">账户类型：</label>
+                            <div class="layui-input-inline">
+                                <select name="acc_type">
+                                    <option value="企业" selected="selected">企业</option>
+                                    <option value="个人">个人</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">联行号：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="phone_bank" lay-verify="notNull" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">开户行省：</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="pro_name" lay-verify="notNull" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">开户行市：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="city_name" lay-verify="notNull" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">账户姓名：</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="acc_name" lay-verify="notNull" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">银行卡号：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="bank_mark" lay-verify="notNull" autocomplete="off" class="layui-input" style="width:220px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">分支行信息</label>
+                        <input type="text" name="branck_bank" lay-verify="length" autocomplete="" value="" class="layui-input" style="width:260px;">
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">转账限额：</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="quota" lay-verify="quota" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline quota_unit">
+                            万元
+                        </div>
+                        <!-- <div class="layui-inline ac_input_but">
+                            <div class="layui-input-block ">
+                                <button class="layui-btn but_but" lay-submit="notNull" lay-filter="com_data">保存</button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="mc_title foot">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">创建时间：</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="found_data" lay-verify="notNull" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">提交时间：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="set_data" lay-verify="notNull" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">完成时间：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="done_data" lay-verify="notNull" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">审核说明：</label>
+                                <div class="layui-input-inline">
+                                    <input type="tel" name="explain" lay-verify="notNull" autocomplete="off" class="layui-input" style="width:750px">
+                                </div>
+
+                            </div>
+                        </div>
+            </form>
+            </div>
+            </div>
+            <script src="../js/jquery-3.3.1.min.js"></script>
+            <script src="../layui/layui.js"></script>
+            <script src="../js/add_child.js"></script>
+</body>
+
+</html>

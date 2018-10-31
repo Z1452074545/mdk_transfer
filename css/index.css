@@ -1,0 +1,118 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right bottom, #5b83fd, #57c4ff) no-repeat;
+    background-size: 100% 100%;
+}
+
+.txt_title {
+    width: 245px;
+    height: 50px;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+.img_bi {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background: url('../image/login_bi.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.login {
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px #5b83fd;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.title {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.txt_title img {
+    display: block;
+    float: left;
+    width: 17%;
+}
+
+.txt_title div {
+    float: right;
+    line-height: 50px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.log_input {
+    width: 100%;
+    height: 180px;
+    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.inp_item {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    position: relative;
+}
+
+.inp_item div {
+    position: absolute;
+    right: 42px;
+    bottom: -25px;
+    color: red;
+}
+
+.inp_item input {
+    width: 83%;
+    height: 34px;
+    font-size: 18px;
+    outline: 0 none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 5px;
+    background: #fff;
+}
+
+.but_login {
+    width: 110px;
+    height: 32px;
+    background: #169bd5;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px #ccc;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.but_login:active {
+    border: 1px solid orange;
+    color: orange;
+}

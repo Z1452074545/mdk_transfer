@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/transfer.css">
+    <title>批量转账</title>
+</head>
+
+<body>
+    <div class="test_top"></div>
+    <div class="test_left">
+    </div>
+    <div style="width:85%;float:right;height: 100%">
+        <div class="body_box">
+            <!-- 面包屑 -->
+            <div class="sta_crumb">
+                <a href="javascript:;">首页</a> &nbsp;/&nbsp;
+                <a href="javascript:;" class="bottom_line">批量转账</a>
+            </div>
+            <div class="tran_step"><span>1</span>选择支付账户</div>
+            <div class="mc_title">
+                <div class="mc_title_mess">
+                    公司名称：
+                    <select name="" id="qw_cont_com_name">
+                                <option value="麻袋氪" selected="selected">麻袋氪</option>
+                                <option value="云钛度">云钛度</option>
+                    </select> 账户渠道：
+                    <select name="" id="qw_cont_mer_name">
+                            <option value="联通沃支付" selected="selected">联通沃支付</option>
+                            <option value="苏宁易付">苏宁易付</option>
+                </select>
+                </div>
+                <div class="mc_title_right mc_title_affirm">确定</div>
+            </div>
+            <div class="mc_title title_hide" style="display:none">
+                <div class="mc_title_left">
+                    <div></div>
+                </div>
+                <div class="mc_title_right mc_title_cancel forbidden">取消</div>
+                <span style="display:none">※操作警告：取消会造成正在录入商户的信息丢失</span>
+            </div>
+            <form class="layui-form" action="" lay-filter="example">
+                <div class="tran_step"><span>2</span>添加转账订单</div>
+                <div class="mc_input">
+                    <div class="tran_list_title">
+                        <div class="tran_list_t_left">子订单列表</div>
+                        <div class="tran_list_t_right">添加</div>
+                    </div>
+                    <table class="layui-hide" id="tran_list" lay-filter="tran_list"></table>
+                    <script type="text/html" id="barDemo">
+                        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                    </script>
+                </div>
+                <div class="tran_collect">
+                    <div class="tran_collect_title">
+                        <div class="tran_collect_t_left">
+                            批次转账汇总 <span>刷新</span>
+                        </div>
+                        <div class="tran_collect_t_right">
+                            提交
+                        </div>
+                    </div>
+                    <div class="tran_collect_cont">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/transfer.js"></script>
+</body>
+
+</html>

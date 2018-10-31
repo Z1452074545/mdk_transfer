@@ -1,0 +1,42 @@
+.mc_input {
+    width: 90%;
+    /* height: 480px; */
+    margin: 10px auto;
+    background: #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.tran_list_title {
+    width: 100%;
+    height: 40px;
+}
+
+.tran_list_t_left {
+    float: left;
+    line-height: 40px;
+}
+
+.tran_list_t_right {
+    float: right;
+    width: 145px;
+    height: 40px;
+    background: #169bd5;
+    /* margin: 30px 10px 0 0; */
+    text-align: center;
+    line-height: 40px !important;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.tran_list_t_right:hover {
+    background: #42acdb;
+}
+
+.tran_list_t_right:active {
+    color: orange;
+    border: 1px solid orange;
+}

@@ -1,0 +1,154 @@
+.mc_title {
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #bcbcbc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #ccc;
+    position: relative;
+}
+
+.or_deta {
+    height: 100px !important;
+}
+
+.title_txt {
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    /* background: red; */
+}
+
+.mc_title_left {
+    float: left;
+    line-height: 100px;
+    margin-left: 30px;
+    color: #333;
+    font-size: 16px;
+}
+
+.mc_title_left span {
+    margin-right: 30px;
+}
+
+.mc_title_mess {
+    float: left;
+    line-height: 60px;
+    margin-left: 30px;
+    color: #333;
+    font-size: 16px;
+}
+
+.mc_title_mess select {
+    margin-right: 30px;
+    width: 120px;
+    line-height: 20px;
+}
+
+.mc_title_mess input {
+    height: 20px;
+    width: 160px;
+    margin-top: -5px;
+}
+
+
+/* .remark {
+    background: red;
+} */
+
+.mc_title_m {
+    position: relative;
+}
+
+.rmc_title_m_child {
+    width: 170px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    font-size: 12px;
+    color: red;
+    line-height: 20px;
+}
+
+.remark label {
+    padding: 0 !important;
+}
+
+.remark input {
+    height: 40px;
+    width: 645px !important;
+}
+
+.mc_title_right {
+    float: right !important;
+    width: 145px;
+    height: 40px;
+    background: #169bd5;
+    margin: 30px 10px 0 0;
+    text-align: center;
+    line-height: 40px !important;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.mc_title_right:hover {
+    background: #42acdb;
+}
+
+.mc_title_right:active {
+    color: orange;
+    border: 1px solid orange;
+}
+
+.mc_title_left span {
+    margin-right: 30px;
+}
+
+.mc_input {
+    width: 90%;
+    height: 420px;
+    margin: 10px auto;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.mc_input input {
+    color: #ccc;
+}
+
+.mc_item {
+    background: red;
+}
+
+.layui-form-item input {
+    width: 165px;
+}
+
+.ac_input_but {
+    margin-top: 3px !important;
+    float: right !important;
+}
+
+.layui-btn {
+    width: 145px !important;
+    height: 40px !important;
+    background: #169bd5;
+    border-radius: 8px;
+}
+
+.quota_unit {
+    margin-left: -45px !important;
+}
+
+.foot div {
+    margin-top: 5px;
+}

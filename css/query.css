@@ -1,0 +1,127 @@
+.query_way {
+    width: 90%;
+    height: 100px;
+    background: #f2f2f2;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.qw_title {
+    width: 100%;
+    height: 45px;
+    /* background: red; */
+    line-height: 45px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.qw_title span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.qw_title span.active {
+    font-weight: 600;
+}
+
+.qw_cont {
+    height: 45px;
+    line-height: 45px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    float: left;
+}
+
+.select_qw {
+    float: left;
+}
+
+.inp_date {
+    float: right;
+}
+
+.qw_cont select {
+    margin-right: 120px;
+}
+
+.qw_but {
+    float: right;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background: #169bd5;
+    color: #f2f2f2;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 8px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.qw_but:active {
+    color: #f09f18;
+    border: 1px solid #f09f18;
+}
+
+.histogram {
+    width: 90%;
+    height: 110px;
+    /* background: palegoldenrod; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.histogram div {
+    width: 20%;
+    height: 100px;
+    margin-top: 10px;
+    /* background: rebeccapurple; */
+    float: left;
+}
+
+.histogram div:hover {
+    margin-top: 0px;
+    height: 110px;
+    transition: all 0.2s;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+.histogram_txt {
+    width: 90%;
+    height: 30px;
+    /* background: palegreen; */
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.collect_title {
+    width: 100%;
+    height: 30px;
+    font-weight: 600;
+    /* background: red; */
+}
+
+.collect {
+    width: 90%;
+    height: 300px;
+    margin: 40px auto;
+    /* background: red; */
+    /* margin-top: 80px; */
+}
+
+.collect_cont {
+    width: 65%;
+    float: right;
+    /* height: 200px; */
+    /* background: gold; */
+    margin-top: 20px;
+}
+
+.collect_echas {
+    width: 30%;
+    height: 200px;
+    float: left;
+    /* background: red; */
+    margin-top: 40px;
+}

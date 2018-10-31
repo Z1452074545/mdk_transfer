@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/order_list.css">
+    <title>订单列表</title>
+</head>
+
+<body>
+    <div class="test_top"></div>
+    <div class="test_left">
+    </div>
+    <div style="width:85%;float:right;height: 100%">
+        <div class="body_box">
+            <!-- 面包屑 -->
+            <div class="sta_crumb">
+                <a href="javascript:;">首页</a> &nbsp;/&nbsp;
+                <a href="javascript:;" class="bottom_line">订单列表</a>
+            </div>
+            <form class="layui-form" action="" lay-filter="example">
+                <div class="al_query_box">
+                    <div class="al_query_left">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label lab_width">公司账户</label>
+                            <div class="layui-input-inline m_width">
+                                <select name="o_list1">
+                                    <option value="1111111111111111" selected="">1111111111111111</option>
+                                    <option value="22222222222222" >22222222222222</option>
+                                    <option value="33333333333">33333333333</option>
+                                  </select>
+                            </div>
+                            <label class="layui-form-label lab_width">商户账户</label>
+                            <div class="layui-input-inline m_width">
+                                <select name="o_list2">
+                                    <option value="全部" selected="selected">全部</option>
+                                    <option value="1">1</option>
+                                    <option value="2" >2</option>
+                                  </select>
+                            </div>
+                            <label class="layui-form-label lab_width">业务类型</label>
+                            <div class="layui-input-inline m_width">
+                                <select name="o_list3">
+                                    <option value="全部" selected="selected">全部</option>
+                                    <option value="流量">流量</option>
+                                    <option value="话费">话费</option>
+                                    <option value="加油卡">加油卡</option>
+                                  </select>
+                            </div>
+                            <label class="layui-form-label lab_width">操作人</label>
+                            <div class="layui-input-inline m_width">
+                                <select name="o_list4">
+                                    <option value="全部">全部</option>
+                                    <option value="佳琪">佳琪</option>
+                                    <option value="海岚" >海岚</option>
+                                    <option value="王麻子" >王麻子</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label lab_width">日期</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="ol_data1" id="ol_data1" placeholder="yyyy-MM-dd">
+                                </div>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="ol_data2" id="ol_data2" placeholder="yyyy-MM-dd">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="al_query_right">
+                        <button class="layui-btn" lay-submit="ol_query" lay-filter="ol_query">查询</button>
+
+                    </div>
+                </div>
+            </form>
+
+            <div class="account_list">
+                <div class="account_list_title">
+                    <span></span> 支付订单列表
+                </div>
+                <div class="account_list_cont">
+                    <div class="layui-btn-group demoTable">
+                        <button class="layui-btn but_export" data-type="getCheckLength">导出</button>
+                        <button class="layui-btn but_get" id="but_get" data-type="getCheckData">补发打款</button>
+                    </div>
+                    <table class="layui-hide" id="acc_list" lay-filter="acc_list"></table>
+                    <script type="text/html" id="barDemo">
+                        <a class="layui-btn layui-btn-xs" lay-event="edit">查看</a>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/order_list.js"></script>
+</body>
+
+</html>
